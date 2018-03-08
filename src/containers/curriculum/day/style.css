@@ -1,0 +1,134 @@
+.am-tabs-horizontal .am-tabs-pane-wrap-inactive {
+    min-height: 100%;
+}
+
+.curriculum-day-tabs .am-tabs-default-bar {
+    padding: 0 .875rem;
+}
+
+.curriculum-day-tabs .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+    padding: .3125rem;
+}
+
+html:not([data-scale]) .curriculum-day-tabs .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+    display: none;
+}
+
+.curriculum-day-tabs .am-tabs-default-bar-tab {
+    /* 47 */
+    height: 2.9375rem
+}
+
+.curriculum-day-tabs .am-tabs-default-bar-tab>* {
+    display: block;
+    /* 35 */
+    height: 2.1875rem;
+    width: 2.1875rem;
+    line-height: 2.1875rem;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.curriculum-day-tabs .am-tabs-default-bar-tab-active>* {
+    border-radius: 100%;
+    background-color: #5bb287;
+    color: #fff;
+}
+
+.curriculum-day-tabs .am-tabs-default-bar-underline {
+    display: none;
+}
+
+.curriculum-day-tabs.app-border-bottom::after {
+    background-color: #f2f2f2;
+    transform: scaleY(1);
+}
+
+.curriculum-day-time {
+    /* 45 */
+    height: 2.8125rem;
+    padding: 1rem .875rem;
+    background: #f2f2f2;
+    color: #333333;
+    font-size: 1rem;
+}
+
+.curriculum-day-items {
+    /* 19 14*/
+    padding: 1.1875rem 0;
+    flex: 1;
+}
+
+.curriculum-day-items .am-list-item .am-list-line .am-list-content {
+    padding: 0;
+}
+
+.curriculum-day-itemsNull {
+    padding-top: 5.625rem;
+    text-align: center;
+}
+
+.curriculum-day-itemsNull-Svg {
+    width: 4.25rem;
+    height: 4.25rem;
+    margin: auto;
+    margin-bottom: 2.4375rem
+}
+
+.curriculum-day-item {
+    /* 108 */
+    height: 6.75rem;
+    display: flex;
+    color: #333333;
+}
+
+.curriculum-day-item-left {
+    /* 12 */
+    width: .75rem;
+    position: relative;
+}
+
+/* 椭圆 */
+
+.curriculum-day-item-left::before {
+    content: '';
+    position: absolute;
+    background-color: #5bb287;
+    display: block;
+    border-radius: 100%;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    top: .1875rem;
+    width: .6875rem;
+    height: .6875rem;
+    /* transform-origin: 50% 100%; */
+    /* transform: translateX(-50%); */
+}
+
+/* 线条 */
+
+.curriculum-day-item-left::after {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: .3125rem;
+    width: .0625rem;
+    height: 5.625rem;
+    transform-origin: 50% 100%;
+    transform: scaleX(0.5);
+}
+
+.curriculum-day-item-right {
+    width: 100%;
+    height: 100%;
+}
+
+.curriculum-day-item-right {
+    padding-left: .5625rem
+}

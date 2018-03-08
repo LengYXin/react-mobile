@@ -1,0 +1,54 @@
+.curriculum-details-items .am-list-item,
+.curriculum-details-items .am-list-item .am-list-line,
+.curriculum-details-items .am-list-item .am-list-line .am-list-content {
+    padding: 0;
+}
+
+.curriculum-details-title {
+   width: 100%;
+}
+
+.curriculum-details-title .am-card-body {
+    padding: 1.125rem .625rem;
+    display: flex;
+}
+
+.curriculum-details-title .am-card-header {
+    padding: 0;
+    min-height: 0;
+}
+
+.curriculum-details-title .am-card-header-content {
+    width: 3.4375rem;
+    flex: 0;
+}
+
+.curriculum-details-title .am-card-header-content>img {
+    height: 3.4375rem;
+    width: 3.4375rem;
+    border-radius: 100%;
+    margin: 0
+}
+
+.curriculum-details-title .am-card-header-extra {
+    text-align: left;
+    padding-left: 1.25rem
+}
+
+.curriculum-details-name {
+    font-size: 1rem;
+    color: #1f1f1f;
+    line-height: 1rem;
+}
+.curriculum-details-name-t{
+    font-size: 1.0625rem;
+    line-height:  1.0625rem;
+    text-align: center;
+    /* padding: 12px; */
+    padding:24px 0 15px 0; 
+}
+.curriculum-details-lecturer {
+    font-size: .875rem;
+    line-height: .875rem;
+    padding-top: .6875rem
+}

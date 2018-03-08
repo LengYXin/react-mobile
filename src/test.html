@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 200px;
+            background: #fff;
+            border: 1px solid #ccc;
+            position: absolute;
+            left: 100px;
+            bottom: 200px;
+        }
+
+        .box:before,
+        .box:after {
+            content: '';
+            z-index: -1;
+            width: 50%;
+            height: 20%;
+            left: 10px;
+            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+            -webkit-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+            position: absolute;
+            bottom: 15px;
+        }
+
+        .box:after {
+            left: auto;
+            right: 10px;
+            -webkit-transform: rotate(-3deg);
+            -ms-transform: rotate(3deg);
+            -o-transform: rotate(3deg);
+            transform: rotate(3deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is a box</div>
+
+</body>
+
+</html>

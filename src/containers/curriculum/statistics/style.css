@@ -1,0 +1,83 @@
+.curriculum-statistics {
+	padding: .375rem .3125rem
+}
+
+.curriculum-statistics-title {
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.curriculum-statistics-title h5,
+.curriculum-statistics-title h5 span {
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.curriculum-statistics-statistics {
+	width: 100%;
+}
+
+.curriculum-statistics-statistics span {
+	font-size: 1.125rem;
+	line-height: 2.0625rem;
+}
+
+.curriculum-statistics-statistics .curriculum-statistics-count {
+	font-size: 2.0625rem;
+	line-height: 2.0625rem;
+}
+
+.curriculum-statistics-semester {
+	width: 100%;
+}
+
+.curriculum-statistics-semester span {
+	font-size: .875rem;
+	line-height: .875rem;
+}
+
+.curriculum-statistics-theSum {
+	width: 100%;
+	padding: 11px 5px;
+}
+
+.curriculum-statistics-theSum .am-flexbox {
+	width: 100%;
+}
+
+.curriculum-statistics-theSum .am-flexbox span {
+	font-size: .875rem;
+	/* line-height: .875rem; */
+}
+
+.curriculum-statistics-theSum span.curriculum-s-t-count {
+	font-size: 1.5rem;
+	line-height: 1.5rem
+}
+
+.curriculum-statistics-list .app-card-body.am-card-body {
+	padding: 1.375rem 1.8125rem;
+}
+
+.curriculum-statistics-list-title span,
+.curriculum-statistics-list span {
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.curriculum-statistics-list-count {
+	padding-top: 1rem;
+}
+
+.curriculum-statistics-list-count span {
+	line-height: 1.3125rem;
+}
+
+.curriculum-statistics-list-count span.color-green,
+.curriculum-statistics-list-count span.color-orange {
+	font-size: 1.3125rem;
+	line-height: 1.3125rem;
+	margin-right: .3125rem;
+}

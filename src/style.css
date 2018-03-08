@@ -1,0 +1,150 @@
+@import "./assets/icon/iconfont.css";
+html,
+body,
+#root,
+.animate-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: "黑体 Regular", sans-serif;
+}
+
+/* 边框 */
+
+.app-border-top,
+.app-border-bottom {
+    position: relative;
+    width: 100%;
+}
+
+.app-border-top::after,
+.app-border-bottom::after {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: .0625rem;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+}
+
+.app-border-top::after {
+    top: 0;
+}
+
+.app-border-bottom::after {
+    bottom: 0;
+}
+
+.app-border-left,
+.app-border-right {
+    position: relative;
+    height: 100%;
+}
+
+.app-border-left::before,
+.app-border-right::before {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: .0625rem;
+    transform-origin: 50% 100%;
+    transform: scaleX(0.5);
+}
+
+.app-border-left::before {
+    left: 0;
+}
+
+.app-border-right::before {
+    right: 0;
+}
+
+/* 字体颜色 */
+
+.color-ash {
+    color: #999999 !important;
+}
+
+.color-green {
+    color: #5bb287 !important;
+}
+
+.color-orange {
+    color: #fc9d7f !important;
+}
+
+/* 背景颜色 */
+
+.background-color-gray,
+.background-color-gray .am-list-item,
+.background-color-gray .curriculum-body {
+    background: #f2f2f2 !important;
+}
+
+/* 过度动画 */
+
+.fade-enter {
+    opacity: 0;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-appear {
+    opacity: 0;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-leave {
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-play-state: paused;
+}
+
+.fade-enter.fade-enter-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-appear.fade-appear-active {
+    animation-name: fadeIn;
+    animation-play-state: running;
+}
+
+.fade-leave.fade-leave-active {
+    animation-name: fadeOut;
+    animation-play-state: running;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

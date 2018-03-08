@@ -1,0 +1,15 @@
+.app-card.am-card {
+    min-height: 0;
+    padding: 0;
+    border: none;
+}
+
+.app-card.am-card::before,
+html:not([data-scale])  .app-card-body.am-card-body::before {
+    display: none;
+}
+.app-card-body.am-card-body {
+    padding: 1.125rem .875rem;
+    min-height: 0;
+    /* display: flex; */
+}
