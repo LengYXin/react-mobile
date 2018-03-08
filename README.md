@@ -12,3 +12,8 @@
          localhost:端口
 
 ```
+![](/psd&jpg/01-今日课程表.png)
+![](/psd&jpg/03-周课程表3.png)
+![](/psd&jpg/05-课程详情.png)
+![](/psd&jpg/7-课程统计.png)
+
