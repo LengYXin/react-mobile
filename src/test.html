@@ -46,7 +46,84 @@
 
 <body>
     <div class="box">this is a box</div>
+    <script>
+        (function () {
+            function analysis(param) {
+                try {
+                    if (typeof param !== "string" || typeof eval(param) !== "number") {
+                        return console.error("非字符串公式");;
+                    }
+                    // 原始字符串
+                    this.original = param;
+                    //记录每次 （ 中的字符串 数组
+                    this.list = [];
+                    this.values = [];
+                    this.brackets();
+                } catch (error) {
+                    console.error(error);
+                }
+            };
+            // 查找括号 中的 公式
+            analysis.prototype.brackets = function () {
+                if (!this.original.length) {
+                    return console.error("非字符串公式", this.list);
+                }
+                var leftCount = 0,
+                    start = end = -1;
+                this.original.split("").reduce((x, y, i) => {
+                    if (y == "(") {
+                        if (start == -1) {
+                            start = i;
+                        }
+                        leftCount++;
+                    };
+                    if (y == ")") {
+                        leftCount--;
+                        if (end == -1 && leftCount == 0) {
+                            end = i;
+                            this.list.push({
+                                start: start,
+                                end: end
+                            });
+                        }
+                    };
+                    if (start != -1 && end != -1 && leftCount == 0) {
 
+                        start = -1;
+                        end = -1;
+                    }
+                }, -1);
+
+                this.values = this.list.map(x => {
+                    return new analysis(this.original.substring(x.start + 1, x.end)).result();
+                });
+                // console.log(this.original, this);
+
+            };
+            //加减
+            analysis.prototype.aAndS = function (param, start, end) {
+
+            };
+            //乘数
+            analysis.prototype.mAndD = function (param, start, end) {
+
+            };
+            //结果
+            analysis.prototype.result = function () {
+                var newStrs = this.original;
+                this.list.map((x, i) => {
+                    newStrs = newStrs.replace(this.original.substring(x.start, x.end + 1), this.values[
+                        i]);
+                });
+                console.table({
+                    "原始": this.original,
+                    "转换": newStrs
+                });
+                return eval(this.original);
+            };
+            new analysis("1+(1+2*(3+4))*1+(4-(1+1))").result();
+        })()
+    </script>
 </body>
 
 </html>
